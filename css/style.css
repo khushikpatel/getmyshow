@@ -1,0 +1,206 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Mulish', sans-serif;
+}
+
+.fnav{
+    display:flex;
+    justify-content: center;
+    justify-content: space-around;
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+.fnav .left{
+    display: flex;
+    margin-top: 9px;
+}
+.left img{
+    width: 20%;
+    margin-bottom: 2%;
+}
+.left i{
+    color: black;
+    margin-top: 24px;
+    margin-left: -2.5rem;
+}
+.left input{
+    margin-inline: 11px;
+    width: 450px;
+    height: 33px;
+    border: none;
+    outline: none;
+    text-align: center;
+    margin-top: 16px;
+    border-radius: 20px;
+}
+.fnav .right{
+    display: flex;
+    margin-top: 26px;
+}
+.right p{
+    margin-inline: 10px;
+    font-size: 17px;
+}
+.right button{
+    margin-inline: 24px;
+    width: 80px;
+    height: 27px;
+    border: none;
+    border-radius: 2px;
+    background-color: rgb(251,59,91);
+    color: white;
+    cursor: pointer;
+}
+.right i{
+    margin-inline: 24px;
+    font-size: 22px;
+}
+.sec-nav{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 9px;
+    background-color: rgb(26,26,48);
+    color: white;
+}
+.sec-nav .s-left{
+    display: flex;
+    margin-right: 55%;
+    
+}
+.sec-nav .s-right{
+    display: flex;
+}
+.s-left p{
+    margin-inline-start: 18px;
+}
+.s-right p{
+    margin-inline-start: 22px;
+}
+.sec-nav p:hover{
+    color: rgb(245,70,99);
+    cursor: pointer;
+    font-weight: 600;
+}
+.main img{
+    width: 100%;
+}
+.container h2{
+    padding: 22px;
+    color: rgb(46, 45, 45);
+}
+.column .p1{
+    color: black;
+    margin-left: 50%;
+    font-weight: bold;
+}
+
+.container .card{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+.card img{
+    width: 15%;
+    margin-block: 18px;
+    border-radius: 5px;
+    margin-inline: 28px;
+    margin-left: 50%;
+}
+.card .column {
+    justify-content: center;
+    width: 20%;
+    padding: 7px;
+}
+.card .row::after {
+    justify-content: center;
+    content: "";
+    clear: both;
+    display: table;
+}
+.premiere{
+    background-color: black;
+    color: white;
+    padding: 33px;
+    margin-top: 44px;
+}
+.container .column {
+    justify-content: center;
+    width: 20%;
+    padding: 7px;
+}
+  
+  
+.container .row::after {
+    justify-content: center;
+    content: "";
+    clear: both;
+    display: table;
+}
+.footer{
+    background-color: rgb(42,42,68);
+    padding: 33px;
+    margin-top: 44px;
+}
+.footer img{
+    width: 20%;
+    margin-left: 39%;
+    border-top: 2px solid gray;
+}
+.footer .icon{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+}
+.icon img{
+    margin-inline: 29px;
+    
+}
+.icon .column {
+    justify-content: center;
+    width: 20%;
+    padding: 7px;
+}
+  
+  
+.icon .row::after {
+    justify-content: center;
+    content: "";
+    clear: both;
+    display: table;
+}
+.icon img:hover{
+    color: bisque;
+    cursor: pointer;
+}
+.modal-title{
+    text-align: center;
+    color: gray;
+    font-size: small;
+    
+}
+.button-s{
+    padding: 2px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: white;
+    width: 60%;
+    height: 40px;
+    justify-content: center;
+    display: flex;
+}
+.button-s i{
+    margin-top: 0.3rem;
+    margin-right: 20%;
+}
+.button-s:hover{
+    border: none;
+    background-color:lightgrey;
+}
+.dropdown-menu {
+    max-height:200px;
+    overflow-y: scroll; 
+ }
+ 
