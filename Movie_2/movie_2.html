@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GetMyShow</title>
+    <link rel="shortcut icon" href="../images/logo.png">
+    <script src="https://kit.fontawesome.com/016d349435.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,300&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="../images/logo.png">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+    *{
+        margin: 0%;
+        padding: 0%;
+        font-family: 'Mulish', sans-serif;
+    }
+    
+    .fnav{
+        display:flex;
+        justify-content: center;
+        justify-content: space-around;
+        color: white;
+        background-color: rgb(0, 0, 0);
+    }
+    .fnav .left{
+        display: flex;
+        margin-top: 9px;
+    }
+    .left img{
+        width: 20%;
+        margin-bottom: 2%;
+    }
+    .left i{
+        color: black;
+        margin-top: 24px;
+        margin-left: -2.5rem;
+    }
+    .left input{
+        margin-inline: 11px;
+        width: 450px;
+        height: 33px;
+        border: none;
+        outline: none;
+        text-align: center;
+        margin-top: 16px;
+        border-radius: 20px;
+    }
+    .fnav .right{
+        display: flex;
+        margin-top: 26px;
+    }
+    .right p{
+        margin-inline: 10px;
+        font-size: 17px;
+    }
+    .right button{
+        margin-inline: 24px;
+        width: 80px;
+        height: 27px;
+        border: none;
+        border-radius: 2px;
+        background-color: rgb(251,59,91);
+        color: white;
+        cursor: pointer;
+    }
+    .right i{
+        margin-inline: 24px;
+        font-size: 22px;
+    }
+    .sec-nav{
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        padding: 9px;
+        background-color: rgb(26,26,48);
+        color: white;
+    }
+    .sec-nav .s-left{
+        display: flex;
+        margin-right: 55%;
+        
+    }
+    .sec-nav .s-right{
+        display: flex;
+    }
+    .s-left p{
+        margin-inline-start: 18px;
+    }
+    .s-right p{
+        margin-inline-start: 22px;
+    }
+    .sec-nav p:hover{
+        color: rgb(245,70,99);
+        cursor: pointer;
+        font-weight: 600;
+    }
+    .dropdown-menu {
+    max-height:200px;
+    overflow-y: scroll; 
+ }
+ button:hover{
+    text-decoration: underline;
+ }
+ .nleft
+ {
+    margin-top: 2%;
+    margin-left: 25px;
+    font-weight: bold;
+    font-size: 35px;
+    
+ }
+ .nright{
+    margin-left: 1300px;
+    margin-top: -29%;
+    
+ }
+ .nsec{
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    box-shadow: rgb(0 0 0 / 16%) 0px 1px 8px 0px;
+    display: flex;
+    width: 100%;
+    animation: 0.3s ease 0s 1 normal none running bcCCNc;
+    background-color: rgb(255, 255, 255);
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    height:86px;
+    visibility: hidden;
+ }
+ .footer{
+    background-color: rgb(42,42,68);
+    padding: 33px;
+    margin-top: 44px;
+}
+.footer img{
+    width: 20%;
+    margin-left: 39%;
+    border-top: 2px solid gray;
+}
+.footer .icon{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+}
+.icon img{
+    margin-inline: 29px;
+    
+}
+.icon .column {
+    justify-content: center;
+    width: 20%;
+    padding: 7px;
+}
+  
+  
+.icon .row::after {
+    justify-content: center;
+    content: "";
+    clear: both;
+    display: table;
+}
+#imp
+{
+    border-radius: 10%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+ 
+</style>
+</head>
+<body>
+    
+    <nav class="sec-nav">
+        <div class="s-left">
+            <a href="/getmyshow.html" style="text-decoration: none; color: white;"><p>Home</p></a>
+            <a href="../Movies/movies.html" style="text-decoration: none; color: white;"><p>Movies</p></a>
+            <a href="../Movies/streams.html" style="text-decoration: none; color: white;"><p>Streams</p></a>
+            <a href="../Movies/events.html" style="text-decoration: none; color: white;"><p>Events</p></a>
+        
+            <a href="../ACTIVITIES/activity.html" style="text-decoration: none; color: aliceblue;"><p>Activities</p></a>
+            
+        </div>
+        <div class="s-right">
+            <p>ListYourShow</p>
+            <p>Corporates</p>
+            <p>Offers</p>
+        </div>
+    </nav>
+
+    <div class="container-fluid" style="background-color: black;display: flex; background: url(../images/back1.jpg) no-repeat; background-size: 100%;">
+
+        <img src="../images/2.png" height="500px" alt="aa" id="imp" onclick="trailer()"  style="cursor: pointer;">
+
+        <h1 style="color: white; margin-left: 30px; margin-top: 100px; font-size: 36px; font-weight: bold;">Ant-Man and the Wasp: Quantumania</h1>
+
+        <hr style="color:white;width: 50%; position: absolute; font-size: large; margin-left: 400px; margin-top: 150px;">
+
+        <a href="movie_2.html" id="bt" style="position: absolute;text-decoration: none;margin-bottom: 100px;margin-left: 98%;color: red;visibility: hidden;">X</a>
+
+        
+        <a href="#"><button style="background-color: lightgray; margin-top: 200px; margin-left: -640px; border-radius: 4px; width: 250px;border: none;text-decoration: none;">2D,3D,4D,IMAX 3D,IMAX 2D
+        </button></a>
+        
+        <a href="#"><button style=" background-color: lightgray; margin-top: 230px; margin-left: -640px; border-radius: 4px; width: 200px;border: none;text-decoration: none;">English,Tamil,Telugu,Hindi</button></a>
+        <pre style="color:whitesmoke; position: absolute; margin-left:350px; margin-top: 260px;font-family: 'Mulish', sans-serif; font-size: 18px;">
+            Ant-Man and the Wasp find themselves exploring the Quantum Realm, interacting with strange new creatures 
+            and embarking on an adventure that pushes them beyond the limits of what they thought was possible. </pre>
+
+        <i class="fa-solid fa-star" style="color:red; width: 50px; margin-top: 385px; margin-left: -630px;" height="40px"></i><h2 style="color: white;font-size:22px; margin-top: 385px; margin-left: -20px;">8.3/10</h2>
+
+        <a href="../theater-option/Movie_2/theater.html"><button  style="background-color:rgb(251,59,91); width: 190px; height: 50px; text-decoration: none; color: whitesmoke; border-radius: 10px; border: none; font-size: large; font-weight: bold; margin-top: 435px; margin-left: -100px;">Book Tickets</button></a>
+
+        <iframe id="frame"width="97%" height="500" src="https://www.youtube.com/embed/TT5OlqNSbK4" title="Marvel Studios’ Ant-Man and the Wasp: Quantumania | Official Hindi Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="visibility: hidden; position: absolute; margin-left: 0; cursor: none;"></iframe>
+
+    </div>
+
+
+    <section class="nsec" id="sec">
+        <div class="nleft">
+            <p>Quantumania</p>
+        </div>
+
+        <div class="nright">
+            <a href="#"><button  style="background-color:rgb(251,59,91); width: 190px; height: 50px; text-decoration: none; color: whitesmoke; border-radius: 10px; border: none; font-size: large; font-weight: bold; margin-top: 440px; margin-left: -230px;">Book Tickets</button></a>
+        </div>
+    </section>
+
+
+    <div class="container-fluid" style="margin-top: -65px;">
+        <p style="font-size: 35px; font-weight: 600;">Cast</p>
+        <a href="https://en.wikipedia.org/wiki/Paul_Rudd" target="_blank"><img src="../images/Paul.jpeg" alt="" style="margin-bottom: 2%; "></a>
+        <a href="https://en.wikipedia.org/wiki/Evangeline_Lilly" target="_blank"><img src="../images/wasp.jpeg" alt="" style="margin-bottom: 2%;"></a>
+        <a href="https://en.wikipedia.org/wiki/Kathryn_Newton" target="_blank"><img src="../images/cassie.jpeg" alt="" style="margin-bottom: 2%;"></a>
+        <a href="https://en.wikipedia.org/wiki/Michael_Douglas" target="_blank">
+        <img src="../images/mdo.jpeg" alt="" style="margin-bottom: 2%;"></a>
+        <a href="https://en.wikipedia.org/wiki/Jonathan_Majors" target="_blank">
+        <img src="../images/kang.jpeg" alt="" style="margin-bottom: 2%;"></a>
+        <a href="https://en.wikipedia.org/wiki/Michelle_Pfeiffer" target="_blank">
+        <img src="../images/qwe.jpeg" alt="" style="margin-bottom: 2%;"></a>
+    </div>
+    <hr style="color:black;width: 70%;margin-left: 2%;">
+    <div class="container-fluid">
+        <p style="font-size: 35px; font-weight: 600;">Crew</p>
+        <a href="https://en.wikipedia.org/wiki/Peyton_Reed" target="_blank"><img src="../images/peyton.jpeg" alt="" style="margin-bottom: 2%; margin-left: 1%;"></a>
+        <a href="https://en.wikipedia.org/wiki/Kevin_Feige" target="_blank">
+            <img src="../images/kevin.jpeg" alt="" style="margin-bottom: 2%;"></a>
+        <a href="https://en.wikipedia.org/wiki/Sarah_Halley_Finn" target="_blank"><img src="../images/sarah.jpeg" alt="" style="margin-bottom: 2%;"></a>
+        
+    </div>
+    <div class="footer">
+        <img src="../images/logo.png" alt="">
+        <div class="icon">
+            <div class="row">
+                <div class="column">
+                    <a href="https://www.facebook.com/BookMyShowIN/" target="_blank"><i class="fa-brands fa-facebook" style="color: white; height: 10%; width: 20%;"></i></a>
+                </div>
+                <div class="column">
+                   <a href="https://www.instagram.com/bookmyshowin/?hl=en" target="_blank"><i class="fa-brands fa-instagram" style="color: white; height: 10%; width: 20%;"></i></a>
+                </div>
+                <div class="column">
+                    <a href="https://twitter.com/bookmyshow?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fa-brands fa-twitter" style="color: white; height: 10%; width: 20%;"></i></a>
+                </div>
+                <div class="column">
+                   <a href="https://www.youtube.com/@BookMyShowBoB" target="_blank"> <i class="fa-brands fa-youtube" style="color: white; height: 10%; width: 20%;"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="JS_movie.js"></script>
+    
+    
+</body>
+</html>

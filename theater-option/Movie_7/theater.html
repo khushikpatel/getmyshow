@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/016d349435.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,300&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="../images/logo.png">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+    *{
+        margin: 0%;
+        padding: 0%;
+        font-family: 'Mulish', sans-serif;
+    }
+    
+    .fnav{
+        display:flex;
+        justify-content: center;
+        justify-content: space-around;
+        color: white;
+        background-color: rgb(0, 0, 0);
+    }
+    .fnav .left{
+        display: flex;
+        margin-top: 9px;
+        margin-right: 500px;
+    }
+    .left img{
+        width: 20%;
+        margin-bottom: 2%;
+    }
+    .left i{
+        color: black;
+        margin-top: 24px;
+        margin-left: -2.5rem;
+    }
+    .left input{
+        margin-inline: 11px;
+        width: 450px;
+        height: 33px;
+        border: none;
+        outline: none;
+        text-align: center;
+        margin-top: 16px;
+        border-radius: 20px;
+    }
+    .fnav .right{
+        display: flex;
+        margin-top: 26px;
+    }
+    .right p{
+        margin-inline: 10px;
+        font-size: 17px;
+    }
+    .right button{
+        margin-inline: 24px;
+        width: 80px;
+        height: 27px;
+        border: none;
+        border-radius: 2px;
+        background-color: rgb(251,59,91);
+        color: white;
+        cursor: pointer;
+    }
+    .right i{
+        margin-inline: 24px;
+        font-size: 22px;
+    }
+    .sec-nav{
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        padding: 9px;
+        background-color: rgb(26,26,48);
+        color: white;
+    }
+    .sec-nav .s-left{
+        display: flex;
+        margin-right: 55%;
+        
+    }
+    .sec-nav .s-right{
+        display: flex;
+    }
+    .s-left p{
+        margin-inline-start: 18px;
+    }
+    .s-right p{
+        margin-inline-start: 22px;
+    }
+    .sec-nav p:hover{
+        color: rgb(245,70,99);
+        cursor: pointer;
+        font-weight: 600;
+    }
+    .dropdown-menu {
+    max-height:200px;
+    overflow-y: scroll; 
+ }
+ button:hover{
+    text-decoration: underline;
+ }
+ .footer{
+    background-color: rgb(42,42,68);
+    padding: 33px;
+    margin-top: 44px;
+}
+.footer img{
+    width: 20%;
+    margin-left: 39%;
+    border-top: 2px solid gray;
+}
+.footer .icon{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+}
+.icon img{
+    margin-inline: 29px;
+    
+}
+.icon .column {
+    justify-content: center;
+    width: 20%;
+    padding: 7px;
+}
+  
+  
+.icon .row::after {
+    justify-content: center;
+    content: "";
+    clear: both;
+    display: table;
+}
+.active{
+    background-color: #f84464; border-radius: 8px;
+    color: white;
+}
+input[type=button]{
+    background-color: white;
+    text-align: center;height: 50%; width: 35%; color: #4abd5d;
+    border: 0.5px solid gray;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+input[type=button]:hover{
+    background-color: rgb(227, 221, 221);
+}
+</style>
+</head>
+<body>
+    
+    <nav class="sec-nav">
+        <div class="s-left">
+            <a href="/getmyshow.html" style="text-decoration: none; color: white;"><p>Home</p></a>
+            <a href="../Movies/movies.html" style="text-decoration: none; color: aliceblue;"></a><p style="font-weight: bold;">Movies</p>
+            <a href="../Movies/streams.html" style="text-decoration: none; color: aliceblue;"><p>Streams</p></a>
+            <a href="../Movies/events.html" style="text-decoration: none; color: aliceblue;"><p>Events</p></a>
+            
+            <a href="../ACTIVITIES/activity.html" style="text-decoration: none; color: aliceblue;"><p>Activities</p></a>
+        </div>
+        <div class="s-right">
+            <p>ListYourShow</p>
+            <p>Corporates</p>
+            <p>Offers</p>
+        </div>
+    </nav>
+    <div style="background-color: rgb(57, 51, 68); color: white; width: 100%;padding: 0%;">
+        <br>
+        <h1 style="text-indent: 150px;">Selfiee</h1>
+       <p style="text-indent: 155px;"><button style="border: 1px solid white;border-radius: 50px;font-size: large; font-weight: 400; text-align: center;background-color: rgb(57, 51, 68);color: white;width: 2%; text-decoration: none;" disabled>U</button>
+        <span style="border: 1px solid grey;border-radius: 25px;font-size: large; font-weight: 400;color: grey; margin-left: 10px;">Action</span> 
+        <span style="border: 1px solid grey;border-radius: 25px;font-size: large; font-weight: 400;color: grey; margin-left: 10px;">Drama</span></p>
+       <br>
+    </div>
+    <div class="container-fluid">
+        <ul class = "pagination" style="margin-left: 40%;margin-top: 20px;margin-bottom: -20px;">
+            <li style="font-size: 50px;margin-top: -5px; margin-right: 20px;">&laquo;</li>
+            <li style="margin-left: 20px;" class="active" id="check">
+                <a href="theater.html" style="text-decoration: none; color: white; display: flex;flex-direction: column;justify-content: center;align-items: center;width: 40px;" class="link1"><div class="date-day">Wed</div>
+                <div class="date-numeric">01</div>
+                <div class="date-month">Mar</div></a></li>
+            <li style="margin-left: 20px;" >
+                
+                <a href="theater.html"class="check-1" style="text-decoration: none; color: red; display: flex;flex-direction: column;justify-content: center;align-items: center;width: 40px;">
+                <div class="date-day">THUR</div>
+                <div class="date-numeric">02</div>
+                <div class="date-month">Mar</div>
+            </a>
+       </li>
+            <li style="margin-left: 20px;"> <a href="theater.html" class="check-2"  style="text-decoration: none; color: red; display: flex;flex-direction: column;justify-content: center;align-items: center;width: 40px;">
+                <div class="date-day">FRI</div>
+                <div class="date-numeric">03</div>
+                <div class="date-month">Mar</div>
+            </a></li>
+            <li style="margin-left: 20px;"> <a href="theater.html" class="check-3" style="text-decoration: none; color: red; display: flex;flex-direction: column;justify-content: center;align-items: center;width: 40px;">
+                <div class="date-day">SAT</div>
+                <div class="date-numeric">04</div>
+                <div class="date-month">Mar</div>
+            </a></li>
+            <li style="margin-left: 10px;font-size: 50px;margin-top: -5px; margin-left: 25px;">&raquo;</li>
+         </ul>
+    </div>
+    <div style="background-color:rgb(227, 221, 221); width: 100%; margin-top: 40px;margin-bottom: 0%;">
+        <hr>
+        <div class="container" style="background-color:white;border-radius: 5px;">
+            <div style="float: right;">
+                <div style="display: flex;flex-direction: row;justify-content: center;align-items: center; font-size: small;">
+                    <div style="padding: 4px;border-radius: 4px;background-color: #4abd5d;margin-right: 8px; width: 0.2%;"></div>
+                    <div style="margin-left: 5px;"> AVAILABLE </div>
+                    <div style="padding: 4px;border-radius: 4px;background-color: #F60;margin-right: 8px; width: 0.2%; margin-left: 5px;"></div>
+                    <div style="margin-left: 5px;"> FAST FILLING </div>
+                </div>
+            </div>
+            <hr width="100%">
+            <div class="row">
+                <div class="col-3">
+                    <div style="display: flex;flex-direction: row;">
+                        <img src="../Movie_1/heart.png" style="height: 23px;" alt="">
+                        <p style="margin-left: 10px;">PVR : Acropolis , Ahmedabad</p>
+                    </div>
+                    <img src="../Movie_1/M-ticket.png" style="margin-left: 30px;" alt="">
+                </div>
+                <div class="col-1">
+                    <div style="display: flex;flex-direction: row; margin-top: 2px;">
+                        <button style="border: 1px solid black;border-radius: 50px;font-size: small; text-align: center;width: 25%;height: 10%; text-decoration: none;">i</button>
+                        <p style="margin-left: 3px; font-size: small;">INFO</p>
+                    </div>
+                </div>
+                <div class="col-3" style="margin: 1px;">
+                    <input type="button" value="06:45 PM" name="" id="">
+                    <input type="button" value="11:45 PM" name="" id="">
+                    <div style="display: flex;flex-direction: row; font-size: small;">
+                        <div style="padding: 4px;border-radius: 4px;background-color: rgb(255, 208, 0);margin-right: 8px; width: 0.2%; margin-top: 13px; height: 5%;"></div>
+                        <div style="margin-left: 5px; margin-top: 8px;">Cancellation Available</div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-3">
+                    <div style="display: flex;flex-direction: row;">
+                        <img src="../Movie_1/heart.png" style="height: 23px;" alt="">
+                        <p style="margin-left: 10px;">Mukta A2 Cinemas: Satellite Rd</p>
+                    </div>
+                    <img src="../Movie_1/M-ticket.png" style="margin-left: 30px;" alt="">
+                </div>
+                <div class="col-1">
+                    <div style="display: flex;flex-direction: row; margin-top: 2px;">
+                        <button style="border: 1px solid black;border-radius: 50px;font-size: small; text-align: center;width: 25%;height: 10%; text-decoration: none;">i</button>
+                        <p style="margin-left: 3px; font-size: small;">INFO</p>
+                    </div>
+                </div>
+                <div class="col-3" style="margin: 1px;">
+                    <a href="#"><input type="button" value="06:45 PM" name="" id="" ></a>
+                    <a href="#"><input type="button" value="11:45 PM" name="" id="" ></a>
+                    <div style="display: flex;flex-direction: row; font-size: small;">
+                        <div style="padding: 4px;border-radius: 4px;background-color: rgb(255, 208, 0);margin-right: 8px; width: 0.2%; margin-top: 13px; height: 5%;"></div>
+                        <div style="margin-left: 5px; margin-top: 8px;">Cancellation Available</div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-3">
+                    <div style="display: flex;flex-direction: row;">
+                        <img src="../Movie_1/heart.png" style="height: 23px;" alt="">
+                        <p style="margin-left: 10px;">City Gold: Shyamal</p>
+                    </div>
+                    <img src="../Movie_1/M-ticket.png" style="margin-left: 30px;" alt="">
+                </div>
+                <div class="col-1">
+                    <div style="display: flex;flex-direction: row; margin-top: 2px;">
+                        <button style="border: 1px solid black;border-radius: 50px;font-size: small; text-align: center;width: 25%;height: 10%; text-decoration: none;">i</button>
+                        <p style="margin-left: 3px; font-size: small;">INFO</p>
+                    </div>
+                </div>
+                <div class="col-3" style="margin: 1px;">
+                    <a href="#"><input type="button" value="06:45 PM" name="" id="" ></a>
+                    <a href="#"><input type="button" value="11:45 PM" name="" id="" ></a>
+                    <div style="display: flex;flex-direction: row; font-size: small;">
+                        <div style="padding: 4px;border-radius: 4px;background-color: rgb(255, 208, 0);margin-right: 8px; width: 0.2%; margin-top: 13px; height: 5%;"></div>
+                        <div style="margin-left: 5px; margin-top: 8px;">Cancellation Available</div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-3">
+                    <div style="display: flex;flex-direction: row;">
+                        <img src="../Movie_1/heart.png" style="height: 23px;" alt="">
+                        <p style="margin-left: 10px;">Connplex Smart Theatre: Prahaladnagar</p>
+                    </div>
+                    <img src="../Movie_1/M-ticket.png" style="margin-left: 30px;" alt="">
+                </div>
+                <div class="col-1">
+                    <div style="display: flex;flex-direction: row; margin-top: 2px;">
+                        <button style="border: 1px solid black;border-radius: 50px;font-size: small; text-align: center;width: 25%;height: 10%; text-decoration: none;">i</button>
+                        <p style="margin-left: 3px; font-size: small;">INFO</p>
+                    </div>
+                </div>
+                <div class="col-3" style="margin: 1px;">
+                    <a href="#"><input type="button" value="06:45 PM" name="" id="" ></a>
+                    <a href="#"><input type="button" value="11:45 PM" name="" id="" ></a>
+                    <div style="display: flex;flex-direction: row; font-size: small;">
+                        <div style="padding: 4px;border-radius: 4px;background-color: rgb(255, 208, 0);margin-right: 8px; width: 0.2%; margin-top: 13px; height: 5%;"></div>
+                        <div style="margin-left: 5px; margin-top: 8px;">Cancellation Available</div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <br>
+        </div>
+        <hr>
+    </div>
+    <div class="footer" style="margin-top: -20px;">
+        <img src="../images/logo.png" alt="">
+        <div class="icon">
+            <div class="row">
+                <div class="column">
+                    <a href="https://www.facebook.com/BookMyShowIN/" target="_blank"><i class="fa-brands fa-facebook" style="color: white; height: 10%; width: 20%;"></i></a>
+                </div>
+                <div class="column">
+                   <a href="https://www.instagram.com/bookmyshowin/?hl=en" target="_blank"><i class="fa-brands fa-instagram" style="color: white; height: 10%; width: 20%;"></i></a>
+                </div>
+                <div class="column">
+                    <a href="https://twitter.com/bookmyshow?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fa-brands fa-twitter" style="color: white; height: 10%; width: 20%;"></i></a>
+                </div>
+                <div class="column">
+                   <a href="https://www.youtube.com/@BookMyShowBoB" target="_blank"> <i class="fa-brands fa-youtube" style="color: white; height: 10%; width: 20%;"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-3">
+        <div class="modal fade" id="ex">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content" style="border: none; outline: none;">
+                    <div class="modal-body">
+                        <button class="close" data-bs-dismiss="modal" style="float: right; border: none; background-color: white;">&times;</button>
+                        <h5  class="modal-title">Get Started</h5>
+                        <br><center>
+                       
+                        <button class="button-s"><i class="fa-brands fa-google"></i>Continue With Google</button></center>
+                        <br>
+                        
+                        <center><button class="button-s"><i class="fa-solid fa-envelope"></i>Continue With Email</button></center>
+                        <br>
+                        
+                        <center><button class="button-s"><i class="fa-brands fa-apple"></i>Continue With apple</button></center>
+                        <br>
+                        
+                        <p style="text-align: center; color: gray; font-size: small;">OR</p>
+                        <br>
+                        
+                        <center><input type="tel" placeholder="Continue With Mobile Number" style="width: 60%; border-radius: 5px;"></center>
+                        <br>
+                        
+                        <p style="color: gray;text-align: center; font-size: small;">I agree to the <a href="" style="color: gray; font-size: small;">Terms & Conditions</a> & <a href="" style="color: gray; font-size: small;">Privacy Policy</a></p>
+                        <button class="btn btn-secondary" data-bs-dismiss="modal" style="float: right;">Close</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

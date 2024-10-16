@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GetMyShow</title>
+    <script src="https://kit.fontawesome.com/016d349435.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,300&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="../images/logo.png">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+<link  href="JS_movie.js">
+    <style>
+    *{
+        margin: 0%;
+        padding: 0%;
+        font-family: 'Mulish', sans-serif;
+    }
+    
+    .fnav{
+        display:flex;
+        justify-content: center;
+        justify-content: space-around;
+        color: white;
+        background-color: rgb(0, 0, 0);
+    }
+    .fnav .left{
+        display: flex;
+        margin-top: 9px;
+    }
+    .left img{
+        width: 20%;
+        margin-bottom: 2%;
+    }
+    .left i{
+        color: black;
+        margin-top: 24px;
+        margin-left: -2.5rem;
+    }
+    .left input{
+        margin-inline: 11px;
+        width: 450px;
+        height: 33px;
+        border: none;
+        outline: none;
+        text-align: center;
+        margin-top: 16px;
+        border-radius: 20px;
+    }
+    .fnav .right{
+        display: flex;
+        margin-top: 26px;
+    }
+    .right p{
+        margin-inline: 10px;
+        font-size: 17px;
+    }
+    .right button{
+        margin-inline: 24px;
+        width: 80px;
+        height: 27px;
+        border: none;
+        border-radius: 2px;
+        background-color: rgb(251,59,91);
+        color: white;
+        cursor: pointer;
+    }
+    .right i{
+        margin-inline: 24px;
+        font-size: 22px;
+    }
+    .sec-nav{
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        padding: 9px;
+        background-color: rgb(26,26,48);
+        color: white;
+    }
+    .sec-nav .s-left{
+        display: flex;
+        margin-right: 55%;
+        
+    }
+    .sec-nav .s-right{
+        display: flex;
+    }
+    .s-left p{
+        margin-inline-start: 18px;
+    }
+    .s-right p{
+        margin-inline-start: 22px;
+    }
+    .sec-nav p:hover{
+        color: rgb(245,70,99);
+        cursor: pointer;
+        font-weight: 600;
+    }
+    .dropdown-menu {
+    max-height:200px;
+    overflow-y: scroll; 
+ }
+ button:hover{
+    text-decoration: underline;
+ }
+ .nleft{
+    margin-top: 1%;
+    margin-left: 25px;
+    font-weight: bold;
+    font-size: 35px;
+    
+ }
+ .nright{
+    margin-left: 1300px;
+    margin-top: -29%;
+    
+ }
+ .nsec{
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    box-shadow: rgb(0 0 0 / 16%) 0px 1px 8px 0px;
+    display: flex;
+    width: 100%;
+    animation: 0.3s ease 0s 1 normal none running bcCCNc;
+    background-color: rgb(255, 255, 255);
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    height:86px;
+    visibility: hidden;
+ }
+ .footer{
+    background-color: rgb(42,42,68);
+    padding: 33px;
+    margin-top: 44px;
+}
+.footer img{
+    width: 20%;
+    margin-left: 39%;
+    border-top: 2px solid gray;
+}
+.footer .icon{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+}
+.icon img{
+    margin-inline: 29px;
+    
+}
+.icon .column {
+    justify-content: center;
+    width: 20%;
+    padding: 7px;
+}
+  
+  
+.icon .row::after {
+    justify-content: center;
+    content: "";
+    clear: both;
+    display: table;
+}
+
+ 
+</style>
+</head>
+<body>
+    
+    <nav class="sec-nav">
+        <div class="s-left">
+            <a href="/getmyshow.html" style="text-decoration: none; color: white;"><p>Home</p></a>
+            <a href="../Movies/movies.html" style="text-decoration: none; color: aliceblue;"><p>Movies</p></a>
+            <a href="../Movies/streams.html" style="text-decoration: none; color: aliceblue;"><p style="font-weight: bold;">Streams</p></a>
+            <a href="../Movies/events.html" style="text-decoration: none; color: aliceblue;"><p>Events</p></a>
+            
+            <a href="../ACTIVITIES/activity.html" style="text-decoration: none; color: aliceblue;"><p>Activities</p></a>
+        </div>
+        <div class="s-right">
+            <p>ListYourShow</p>
+        </div>
+    </nav>
+    <div class="container-fluid" style="background-color: black;display: flex; background: url(../streams/images/shazam_bg.jpg) no-repeat; background-size: 100%;">
+        <img src="../streams/images/Screenshot (1271).png" alt="" id="imp" height="500px" onclick="trailer()" style="cursor: pointer; border-radius: 5%;" >
+        <h1 style="color: white; margin-left: 30px; margin-top: 100px; font-size: 36px; font-weight: bold;">Shazam</h1>
+        <hr style="color:white;width: 50%; position: absolute; font-size: large; margin-left: 350px; margin-top: 150px;">
+        <a href="stream_6_shazam.html" id="bt" style="position: absolute;text-decoration: none;margin-bottom: 100px;margin-left: 98%;color: red;visibility: hidden;">X</a>
+        <i class="fa-solid fa-star" style="color:red; width: 50px; margin-top: 325px; margin-left: -130px;" height="40px"></i><h2 style="color: white;font-size:22px; margin-top: 320px; margin-left: -20px;">7.1/10</h2>
+        <a href=""><button style="background-color: lightgray; margin-top: 200px; margin-left: -90px; border-radius: 4px; width: 40px;border: none;">2D</button></a>
+        <a href=""><button style=" background-color: lightgray; margin-top: 200px; margin-left: -40px; border-radius: 4px; width: 60px;border: none;">English</button></a>
+        <pre style="color:whitesmoke; position: absolute; margin-left:300px; margin-top: 250px;font-family: 'Mulish', sans-serif; font-size: 18px;">
+            Billy Batson is a streetwise 14-year-old who can magically transform
+            into the adult superhero Shazam.</pre>
+
+        <button  style="background-color:rgb(251,59,91); width: 190px; height: 50px; text-decoration: none; color: whitesmoke; border-radius: 10px; border: none; font-size: large; font-weight: bold; margin-top: 365px; margin-left: -115px; margin-bottom: 100px;">Rent  ₹ 149</button>
+        <button  style="background-color:rgb(251,59,91); width: 190px; height: 50px; text-decoration: none; color: whitesmoke; border-radius: 10px; border: none; font-size: large; font-weight: bold; margin-top: 365px; margin-left: 20px; margin-bottom: 100px;">Buy  ₹ 599</button>
+        <iframe id="frame"width="97%" height="500" src="https://www.youtube.com/embed/go6GEIrcvFY" title="SHAZAM! - Official Teaser Trailer " frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="visibility: hidden; position: absolute; margin-left: 0; cursor: none;"></iframe>
+    </div>
+    <section class="nsec" id="sec">
+        <div class="nleft">
+            <p>Shazam</p>
+        </div>
+        <div class="nright">
+            <button  style="background-color:rgb(251,59,91); width: 190px; height: 50px; text-decoration: none; color: whitesmoke; border-radius: 10px; border: none; font-size: large; font-weight: bold; margin-top: 400px; margin-left: -320px;">Buy ₹ 599</button>
+            <button  style="background-color:rgb(251,59,91); width: 190px; height: 50px; text-decoration: none; color: whitesmoke; border-radius: 10px; border: none; font-size: large; font-weight: bold; margin-top: 400px; margin-left: -400px;">Rent ₹ 149</button>
+        </div>
+    </section>
+    <div class="container-fluid" style="margin-top: 10px;">
+        <p style="font-size: 35px; font-weight: 600;">Cast</p>
+        <a href="https://en.wikipedia.org/wiki/Zachary_Levi" target="_blank"><img src="../streams/images/Screenshot (1272) - Copy1.png" alt="" style=" margin-left: 2%;"></a>
+        <a href="https://en.wikipedia.org/wiki/Djimon_Hounsou" target="_blank"><img src="../streams/images/Screenshot (1272).png" alt="" style="margin-left: 2%;"></a>
+        <a href="https://en.wikipedia.org/wiki/Mark_Strong" target="_blank"><img src="../streams/images/Screenshot (1273) - Copy1.png" alt="" style="margin-left: 2%;"></a>
+        <a href="https://en.wikipedia.org/wiki/Jack_Dylan_Grazer" target="_blank"><img src="../streams/images/Screenshot (1274) - Copy1.png" alt="" style="margin-left: 2%;"></a>
+        <a href="https://en.wikipedia.org/wiki/Grace_Caroline_Currey" target="_blank"><img src="../streams/images/Screenshot (1275) - Copy2.png" alt="" style="margin-left: 2%;"></a>
+    </div>
+    <hr style="color:black;width: 70%;margin-left: 2%;">
+    <div class="container-fluid">
+        <p style="font-size: 35px; font-weight: 600;">Crew</p>
+        <a href="https://en.wikipedia.org/wiki/Peter_Safran" target="_blank"><img src="../streams/images/Screenshot (1276) - Copy1.png" alt="" style=" margin-left: 1.5%;"></a>
+        <a href="https://en.wikipedia.org/wiki/David_F._Sandberg" target="_blank"><img src="../streams/images/Screenshot (1276).png" alt="" style=" margin-left: 2%;"></a>
+        <a href="https://en.wikipedia.org/wiki/Henry_Gayden" target="_blank"><img src="../streams/images/Screenshot (1277) - Copy1.png.png" alt="" style=" margin-left: 2%;"></a>
+        <a href="https://en.wikipedia.org/wiki/Darren_Lemke" target="_blank"><img src="../streamss/images/Screenshot (1278) - Copy2.png" alt="" style=" margin-left: 2%;"></a>
+    </div>
+    <div class="footer">
+        <img src="../images/logo.png" alt="">
+        <div class="icon">
+            <div class="row">
+                <div class="column">
+                    <a href="https://www.facebook.com/BookMyShowIN/" target="_blank"><i class="fa-brands fa-facebook" style="color: white; height: 10%; width: 20%;"></i></a>
+                </div>
+                <div class="column">
+                   <a href="https://www.instagram.com/bookmyshowin/?hl=en" target="_blank"><i class="fa-brands fa-instagram" style="color: white; height: 10%; width: 20%;"></i></a>
+                </div>
+                <div class="column">
+                    <a href="https://twitter.com/bookmyshow?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fa-brands fa-twitter" style="color: white; height: 10%; width: 20%;"></i></a>
+                </div>
+                <div class="column">
+                   <a href="https://www.youtube.com/@BookMyShowBoB" target="_blank"> <i class="fa-brands fa-youtube" style="color: white; height: 10%; width: 20%;"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    
+    <script src="JS_movie.js"></script>
+    
+</body>
+
+</html>
